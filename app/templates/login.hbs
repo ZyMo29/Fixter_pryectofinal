@@ -1,24 +1,25 @@
-<form action="#" id="login-form">
-  <div class="heading">Iniciar Sesión</div>
-  <div class="left">
-    <label for="email">Email</label> <br />
-    <input type="email" name="email" id="email" /> <br />
-    <label for="password">Password</label> <br />
-    <input type="password" name="password" id="pass" /> <br />
-    <input type="submit" value="Login" />
-  </div>
-  <div class="right">
-    <div class="connect">Conectar con:</div>
-    <a href="" class="facebook">
-      <span class="fontawesome-facebook"></spa
-    </a> <br />
-    <a href="" class="twitter">
-      <span class="fontawesome-twitter"></span>
-    </a> <br />
-    <a href="" class="google-plus">
-      <span class="fontawesome-google-plus"></span>
-    </a>
-  </div>
-</form> 
+{{!-- <h2> Bienvenido a TORII! </h2> --}}
+
+{{#if session.isAuthenticated}}
+  {{outlet}}
+<h1>Bienvenido a mi Página{{session.currentUser.displayName}}</h1>
+<br>
+<button {{action 'cerrar'}}>Cerrar sesión</button> <br>
+<img src="{{session.currentUser.photoURL}}"> <br>
+
+{{else}}
+  <h2>Bienvenid@s</h2>
+  
+
+<h1 class="redesSociales">Redes Sociales</h1>
+
+  <ul class="redesSociales">
+    <li class="facebook"><a {{action 'singIn' 'facebook'}}> </a></li>
+    <li class="github"><a {{action 'singIn' 'github'}}> </a></li>
+    <li class="twitter"><a {{action 'singIn' 'twitter'}}> </a></li>
+    <li class="google"><a {{action 'singIn' 'google'}}> </a></li>
+  </ul> 
+{{/if}}
+
 
 {{outlet}}

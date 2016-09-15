@@ -6,8 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('finales');
+  this.route('finales', function() {
+    this.route('perfil');
+  });
   this.route('login');
+  this.route('perfil');
 });
 
 export default Router;
