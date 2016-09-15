@@ -1,3 +1,32 @@
-{{!-- <h2 id="title">Welcome to Ember</h2> --}}
+<!--navegador-->
+<nav class="navegacion">
+  
+  <label class="etiqueta btn menu" for="ctrl-menu"><b class="icono"> M E N U</b></label>
+  <label class="etiqueta btn config" for="ctrl-config"><b class="icono">Configurar</b></label>
+  
+  <ul class="menu lista">
+    
+      <li class="item filosofia">
+        <a class="link icono" href="#filosofia">YO</a>
+      </li>
+  
+    <li class="item portafolio">
+      <a class="link icono" href="#portafolio">Paginas de interés</a>
+    </li>
+    
+    <li class="item inicio">
+      <a class="link icono" href="#inicio" title="inicio"><b>Z</b></a>
+    </li>
+    
+    <li class="item habilidades">
+      <a class="link icono" href="#habilidades">Habilidades</a>
+    </li>
+    
+    <li class="item contacto">
+      {{link-to 'Contactame' 'contacto' class="link icono" }}
+    </li>
+  </ul>
+  
+</nav> 
 
 {{outlet}}

@@ -4,7 +4,7 @@
   {{outlet}}
 <h1>Bienvenido a mi Página{{session.currentUser.displayName}}</h1>
 <br>
-<button {{action 'cerrar'}}>Cerrar sesión</button> <br>
+<button {{action 'signOut'}}>Cerrar sesión</button> <br>
 <img src="{{session.currentUser.photoURL}}"> <br>
 
 {{else}}

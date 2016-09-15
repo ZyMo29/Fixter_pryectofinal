@@ -17,7 +17,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    firebase: {
+      apiKey: "AIzaSyDxTHyYcbOcBlCs8rLUGaTg-a2GGnF4gb4",
+      authDomain: "proyecto-final-e632c.firebaseapp.com",
+     databaseURL: "https://proyecto-final-e632c.firebaseio.com",
+      storageBucket: "proyecto-final-e632c.appspot.com",
+      messagingSenderId: "485694702221"
+    },
+    torii: {
+      sessionServiceName: 'session'
+    },
+
   };
 
   if (environment === 'development') {

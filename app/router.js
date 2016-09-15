@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('login');
   this.route('perfil');
+  this.route('contacto');
 });
 
 export default Router;

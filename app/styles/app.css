@@ -1963,54 +1963,24 @@ label.boton.skew-der::before
 
 /*COLORES COMPETENCIAS PER*/
 
-.competencia.illustrator::after { background-color: rgb(276,174,62); }
-
 .competencia.photoshop::after { background-color: rgb(0,75,141); }
 
-.competencia.fireworks::after { background-color: rgb(247,231,46); }
-
-.competencia.flash::after { background-color: rgb(192,40,45); }
-
-.competencia.dreamweaver::after { background-color: rgb(25,191,88); }
-
-.competencia.premier::after { background-color: rgb(170,50,179); }
-
-.competencia.indesign::after { background-color: rgb(230,0,252); }
-
-.competencia.after::after { background-color: rgb(119,0,128); }
-
-.competencia.audition::after { background-color: rgb(10,144,225); }
 
 /*OTROS*/
 
 .competencia.sublime::after { background-color: rgb(64,93,119); }
 
-.competencia.audacity::after { background-color: rgb(0,122,223); }
-
-.competencia.inkscape::after { background-color: rgba(0,0,0,.6); }
-
-.competencia.gimp::after { background-color: rgb(61,67,80); }
 
 /*OTROS*/
 
 .competencia.html::after { background-color: rgb(246,77,62); }
-
 .competencia.css::after { background-color: rgb(0,153,255); }
-
 .competencia.js::after { background-color: rgb(0,122,223); }
 
-.competencia.php::after { background-color: rgb(159,102,253); }
-
-/*CMS*/
-
-.competencia.wordpress::after { background-color: rgb(200,210,220); }
-
-.competencia.joomla::after { background-color: rgb(26,200,142); }
 
 /*FRAMEWORKS*/
 
 .competencia.bootstrap::after { background-color: rgb(170,50,179); }
-
 .competencia.ember::after { background-color: rgb(200,210,220); }
 .competencia.github::after { background-color: rgb(246,174,62); }
 .competencia.firebase::after { background-color: rgb(074,025,44); }
@@ -2092,26 +2062,21 @@ label.boton.skew-der::before
 .photoshop + .porcentaje i {  width: 65%; }
 
 
-
 /*OTROS*/
 
 .sublime + .porcentaje i {  width: 90%; }
 
 
-
 /*LENGUAJES*/
 
 .html + .porcentaje i {  width: 85%; }
-
 .css + .porcentaje i {  width: 95%; }
-
 .js + .porcentaje i {  width: 80%; }
 
 
 /*FRAMEWORKS*/
 
 .bootstrap + .porcentaje i {  width: 60%; }
-
 .ember + .porcentaje i {  width: 90%; }
 .github + .porcentaje i {  width: 85%; }
 .firebase + .porcentaje i {  width: 87%; }
